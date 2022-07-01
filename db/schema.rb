@@ -119,23 +119,19 @@ ActiveRecord::Schema.define(version: 2022_02_10_055408) do
   create_table "estimates", force: :cascade do |t|
     t.string "co"
     t.string "name"
+    t.string "name_kana"
     t.string "tel"
     t.string "email"
-    t.string "postnumber"
+    t.string "url"
     t.string "address"
-    t.string "installation"
-    t.string "people"
-    t.string "chenge"
-    t.string "change_before"
-    t.string "importance"
-    t.string "period"
+    t.string "settlement"
+    t.string "price"
+    t.string "use"
     t.string "remarks"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.boolean "send_mail_flag"
-    t.string "vender"
-    t.string "other"
+    t.boolean "send_mail_flag", default: false
   end
 
   create_table "messages", force: :cascade do |t|

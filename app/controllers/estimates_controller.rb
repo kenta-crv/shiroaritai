@@ -27,7 +27,8 @@ class EstimatesController < ApplicationController
   end
 
   def show
-    @estimate = Estimate.find(params[:id])
+    @estimate = Estimate.find_by(params[:id])
+
     @comment = Comment.new
   end
 
@@ -88,17 +89,14 @@ class EstimatesController < ApplicationController
     params.require(:estimate).permit(
       :co, #会社名
       :name,  #名前
+      :name_kana,  #フリガナ
       :tel, #電話番号
-      :postnumber, #郵便番号
+      :email, #メールアドレス
+      :url, #会社HP
       :address, #住所
-      :email,
-      :vender,
-      :other,
-      :installation, #設置箇所
-      :people, #屋内の場合、使用が想定される人数
-      :chenge, #自販機交換か
-      :change_before, #交換前自販機
-      :period, #設置希望時期
+      :settlement, #決算期
+      :price, #買取金額
+      :use, #使用用途
       :remarks #要望
     )
   end

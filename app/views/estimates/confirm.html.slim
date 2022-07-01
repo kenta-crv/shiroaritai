@@ -1,3 +1,6 @@
+- set_meta_tags  title: ''
+- set_meta_tags  description: ''
+
 =  form_for @estimate, url: thanks_estimates_path(@estimate) do |f|
   br
   br
@@ -29,6 +32,14 @@
         td
           strong.label 必須
         td.arrow_box
+          | フリガナ
+        td
+         = f.hidden_field :name_kana
+         = @estimate.name_kana
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
           | 電話番号
         td
           = f.hidden_field :tel
@@ -37,15 +48,7 @@
         td
           strong.label 必須
         td.arrow_box
-          | 郵便番号
-        td
-          = f.hidden_field :postnumber
-          = @estimate.postnumber
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 設置先住所
+          | 住所
         td
           = f.hidden_field :address
           = @estimate.address
@@ -61,65 +64,41 @@
         td
           strong.label.label-blue 任意
         td.arrow_box
-          | 希望自販機
+          | URL
         td
-          = f.hidden_field :vender
-          = @estimate.vender
+          = f.hidden_field :url
+          = @estimate.url
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | URL
+        td
+          = f.hidden_field :settlement
+          = @estimate.settlement
       tr
         td
           strong.label 必須
         td.arrow_box
-          | その他の自販機見積もりを希望しますか？
+          | 買取希望額
           br
           |
         td
-         = f.hidden_field :other
-         = @estimate.other
-      tr
-        td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | 設置箇所
-        td
-          = f.hidden_field :installation
-          = @estimate.installation
-      tr
-        td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | 想定される利用人数
-        td
-          = f.hidden_field :people
-          = @estimate.people
+         = f.hidden_field :price
+         = @estimate.price
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 自販機について
+          | 使用用途
         td
-          = f.hidden_field :chenge
-          = @estimate.chenge
+          = f.hidden_field :use
+          = @estimate.use
       tr
         td
           strong.label.label-blue 任意
         td.arrow_box
-          | 交換前自販機会社
-        td
-          = f.hidden_field :change_before
-          = @estimate.change_before
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 設置希望時期
-        td
-          = f.hidden_field :period
-          = @estimate.period
-      tr
-        td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | 要望
+          | 備考
         td
           = f.hidden_field :remarks
           = @estimate.remarks

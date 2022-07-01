@@ -1,18 +1,14 @@
-自販機ねっとにお問い合わせがありました。
+ファクタリング一括見積りにお問い合わせがありました。
 
 --------------------------
 会社名: <%= @estimate.co%>
-担当者: <%= @estimate.name%>
+担当者名: <%= @estimate.name%>（<%= @estimate.name_kana%>）
 電話番号: <%= @estimate.tel%>
-メールアドレス: <%= @estimate.email%>
-郵便番号: <%= @estimate.postnumber%>
 住所: <%= @estimate.address%>
-希望ベンダー: <%= @estimate.vender%>
-その他の自販機見積もりを希望しますか？: <%= @estimate.other%>
-設置箇所: <%= @estimate.installation%>
-人数: <%= @estimate.people %>
-自販機の用途: <%= @estimate.chenge %>
-交換前自販機: <%= @estimate.change_before %>
-設置時期: <%= @estimate.period %>
-要望:<%= @estimate.remarks %>
+メールアドレス: <%= @estimate.email%>
+URL: <%= @estimate.url%>
+決算期（法人の場合）: <%= @estimate.settlement%>
+買取希望額: <%= @estimate.price %>
+使用用途: <%= @estimate.use %>
+備考:<%= @estimate.remarks %>
 --------------------------
