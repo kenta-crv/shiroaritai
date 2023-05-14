@@ -7,101 +7,112 @@
   .tops-wrapper
     h2.headline
       | お見積もり確認フォーム
-    table.company
+    table.company.responsive-table
       colgroup
-        col width="10%"
-        col width="20%"
-        col width="70%"
+        col.col-1
+        col.col-2
+        col.col-3
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 会社名
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :co
           = @estimate.co
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 担当者名
-        td
+        td.responsive-cell
+         .input-container
          = f.hidden_field :name
          = @estimate.name
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | フリガナ
-        td
+        td.responsive-cell
+         .input-container
          = f.hidden_field :name_kana
          = @estimate.name_kana
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 電話番号
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :tel
           = @estimate.tel
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 住所
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :address
           = @estimate.address
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | メールアドレス
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :email
           = @estimate.email
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | URL
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :url
           = @estimate.url
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | URL
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :settlement
           = @estimate.settlement
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 買取希望額
           br
           |
-        td
+        td.responsive-cell
+         .input-container
          = f.hidden_field :price
          = @estimate.price
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 使用用途
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :use
           = @estimate.use
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | 備考
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :remarks
           = @estimate.remarks
       tr
         td colspan="3"
-          = f.submit "送信"
+          = f.submit "送信", class:"btn btn-primary"

@@ -4,92 +4,103 @@
     - @estimate.errors.each do |attr, msg|
       li= msg
     br
-table.company
+table.company.responsive-table
       colgroup
-        col width="10%"
-        col width="20%"
-        col width="70%"
+        col.col-1
+        col.col-2
+        col.col-3
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 会社名
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :co
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 担当者名
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :name
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | フリガナ
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :name_kana
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 電話番号
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :tel
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 住所
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :address
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | メールアドレス
-        td
+        td.responsive-cell
+         .input-container
           = f.email_field :email
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | URL
           br
           |（※ex.ない場合は『なし』と記入）
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :url
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | 決算期（法人の場合）
-        td
+        td.responsive-cell
+         .input-container
          = f.text_field :settlement
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 買取希望額
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :price
           | 円
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 使用用途
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :use
           | 円
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | 備考
-        td
+        td.responsive-cell
+         .input-container
           = f.text_area :remarks
       tr
         td colspan="3"
-          = f.submit "確認画面"
+          = f.submit "確認画面", class:"btn btn-primary"
