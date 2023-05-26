@@ -20,8 +20,10 @@ link[href="../css/froala_style.min.css" rel="stylesheet" type="text/css"]
 = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 = display_meta_tags(default_meta_tags)
 = favicon_link_tag('favicon.ico')
-javascript:
-  | fbq('track', 'ViewContent');
-script[async src="https://www.googletagmanager.com/gtag/js?id=AW-10998015402"]
+<!-- Google tag (gtag.js) -->
+script[async src="https://www.googletagmanager.com/gtag/js?id=G-6K45EPEPJV"]
 script
- | window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10998015402');
+ | window.dataLayer = window.dataLayer || [];
+ | function gtag(){dataLayer.push(arguments);}
+ | gtag('js', new Date());
+ | gtag('config', 'G-6K45EPEPJV');
