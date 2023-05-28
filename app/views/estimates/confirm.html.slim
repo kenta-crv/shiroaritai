@@ -25,6 +25,15 @@
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
+          | 種別
+        td.responsive-cell
+         .input-container
+          = f.hidden_field :select
+          = @estimate.select
+      tr
+        td.label-cell
+          strong.label 必須
+        td.arrow-box-cell
           | 担当者名
         td.responsive-cell
          .input-container
