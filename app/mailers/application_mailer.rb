@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "factoring@factoru.jp"
+  default from: "info@factolink.jp"
   layout 'mailer'
 end
