@@ -1,5 +1,5 @@
 class EstimateMailer < ActionMailer::Base
-  default from: "info@factolink.jpp"
+  default from: "factoring@factoru.jp"
   def received_email(estimate)
     @estimate = estimate
     mail to: "info@factolink.jp"

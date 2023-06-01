@@ -21,10 +21,10 @@ module Eatery
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
     address: 'smtp3.gmoserver.jp',
-    domain: 'info@factolink.jp',
+    domain: 'factoru.jp',
     port: 587,
-    user_name: 'info@factolink.jp',
-    password: 'a9ubwm&a',
+    user_name: 'factoring@factoru.jp',
+    password: '$Az4gmMn',
     authentication: 'plain',
     enable_starttls_auto: true
     }
