@@ -21,21 +21,13 @@ table.company.responsive-table
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 設置希望時期
+          | 種別
         td.responsive-cell
          .input-container
           = f.select(:select,[\
             ["法人","法人"],\
             ["個人事業主","個人事業主"],\
            ],include_blank: "選択してください")
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
-          | 種別
-        td.responsive-cell
-         .input-container
-          = f.text_field :co
       tr
         td.label-cell
           strong.label 必須
