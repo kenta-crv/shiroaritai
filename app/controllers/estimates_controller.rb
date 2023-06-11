@@ -20,10 +20,22 @@ class EstimatesController < ApplicationController
     EstimateMailer.send_email(@estimate).deliver # 送信者に通知
   end
 
+
   def create
     @estimate = Estimate.new(estimate_params)
-    @estimate.save
-    redirect_to thanks_estimates_path
+  
+    if @estimate.save
+      # Send event to Facebook
+      FacebookConversionApiService.new(
+        @estimate.user.email,  # User's email
+        @estimate.currency,  # Currency type
+        @estimate.value  # Estimate value
+      ).send_event
+  
+      redirect_to thanks_estimates_path
+    else
+      # Handle error
+    end
   end
 
   def show
