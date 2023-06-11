@@ -94,3 +94,5 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 
 gem 'pry-rails'
+#fb api
+gem 'faraday'
