@@ -154,9 +154,6 @@
     margin-top:-22px;
   }
 
-  .main-image {
-  width: 105%;
-}
 
 .pc-image {
   display: none; // PC向けの画像を初めに非表示にします
@@ -165,10 +162,12 @@
 @media only screen and (max-width: 599px) {
   .pc-image {
     display: none; // モバイルビューではPC向けの画像を非表示にします
+    width: 105%;
   }
 
   .mobile-image {
     display: block; // モバイルビューではモバイル向けの画像を表示します
+    width: 100%;
   }
 }
 
@@ -194,7 +193,7 @@
         @media(max-width: 748px) {
           text-align:center;
           font-size:7.0vw;
-          line-height:13vw;
+          line-height:12vw;
         }
         
     }
@@ -209,7 +208,7 @@
         @media(max-width: 748px) {
           text-align:center;
           font-size:7.0vw;
-          line-height:11vw;
+          line-height:10vw;
         }
     }
    }
