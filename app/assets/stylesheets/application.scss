@@ -147,7 +147,6 @@
 
                                    /*  メイン画像  */
   .back-image-top {
-    background-image: url('factoring-main.webp');
     background-size: 75%;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -155,7 +154,35 @@
     margin-top:-22px;
   }
 
- 
+  .main-image {
+  width: 105%;
+}
+
+.pc-image {
+  display: none; // PC向けの画像を初めに非表示にします
+}
+
+@media only screen and (max-width: 599px) {
+  .pc-image {
+    display: none; // モバイルビューではPC向けの画像を非表示にします
+  }
+
+  .mobile-image {
+    display: block; // モバイルビューではモバイル向けの画像を表示します
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .pc-image {
+    display: block; // PCビューではPC向けの画像を表示します
+  }
+
+  .mobile-image {
+    display: none; // PCビューではモバイル向けの画像を非表示にします
+  }
+}
+
+
   .back-image-index {
     text-align:center;
     .index-3 {
@@ -164,7 +191,12 @@
         line-height:7vw;
         color:$asort_color;
         text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
-        @media(max-width: 748px) {font-size:3.3vw;}
+        @media(max-width: 748px) {
+          text-align:center;
+          font-size:7.0vw;
+          line-height:13vw;
+        }
+        
     }
     /*イエローライン*/
     .push {
@@ -174,6 +206,11 @@
         font-weight:bold;
         width:100%;
         text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
+        @media(max-width: 748px) {
+          text-align:center;
+          font-size:7.0vw;
+          line-height:11vw;
+        }
     }
    }
 

@@ -6,16 +6,18 @@ br
 
 .back-image-index.back-image-top
   .row
-    .col-xs-6
-    .col-xs-6
+    .col-sm-6
+       = image_tag "pc-main.webp", class: "main-image pc-image"
+       = image_tag "smart-main.webp", class: "main-image mobile-image"
+    .col-sm-6
         br
         .index-3
          | 最短即日の企業資金調達なら
          br
+         | ファクタリング一括見積の
+         br
          .red
-          | 『ファクタリング一括見積』
-
-        br
+          | 『ファクタリンク』
         p.push
          span
            | \ カンタン60秒入力! /
@@ -32,7 +34,7 @@ br
        | ファクタリング会社一括見積で
        br
        br
-       | 手数料条件を一括比較見積もり！
+       | 最安値手数料企業が見つかる！
 br
 
 .row#anchor
@@ -41,62 +43,24 @@ br
         | 『ファクタリング』とは？
 
 .top-wrapper
- p 『ファクタリング』とは、事業資金を確保したい企業に向けた、今最も注目されている資金現金化サービスです。ファクタリングは、御社が保有する売掛金（請求書）をファクタリング会社がその売掛金を事前に買い取ることで、その入金日を待つこと無く事業資金を確保できるサービスとなります。このサービスは、経済産業省も推奨しており、融資や貸金ではないため、信用情報が傷つくこともありません。
-
- .row.center
-   .col-sm-4
-     h3.head 即日簡単現金化
-     =image_tag 'trouble2.webp', width: '95%', class: 'center'
-     br
-   .col-sm-4
-     h3.head 即日簡単現金化
-     =image_tag 'trouble1.webp', width: '95%', class: 'center'
-     br
-   .col-sm-4
-     h3.head 手軽に申し込める
-     =image_tag 'trouble3.webp', width: '95%', class: 'center'
-     br
- .row.center
-   .col-sm-4
-     h3.head 借金を背負わず資金調達
-     =image_tag 'trouble4.webp', width: '95%', class: 'center'
-     br
-   .col-sm-4
-     h3.head 信用情報は関係無し
-     =image_tag 'trouble5.webp', width: '95%', class: 'center'
-     br
-   .col-sm-4
-     h3.head 経済産業省も推奨
-     =image_tag 'trouble6.webp', width: '95%', class: 'center'
-     br
-
-br
-hr.line
-br
-br
-br
+ br
+ p.center 『ファクタリング』とは、事業資金を確保したい企業に向けた、今最も注目されている資金現金化サービスです。ファクタリングは、御社が保有する売掛金（請求書）をファクタリング会社がその売掛金を事前に買い取ることで、その入金日を待つこと無く事業資金を確保できるサービスとなります。このサービスは、経済産業省も推奨しており、融資や貸金ではないため、信用情報が傷つくこともありません。
+ br/
+ br/
+ .center
+     =image_tag 'image001.webp', width: '80%', class: 'center'
 
 .row#anchor
    .col-sm-12.center
      h2.surprise
         | ファクタリング一括見積とは？
-
+br/
 .top-wrapper
- p いざファクタリングを行う際、1社のみに依頼すると、割高な手数料で契約することになってしまったり、審査落ちしてしまい、必要な期日に現金化出来ないと言う大きなリスクが発生します。一括見積サイトを利用することで、複数のファクタリング会社から見積もりを受けることが出来、現金化出来ないリスクの軽減と共に、買取手数料を最安値に抑えることが出来ます。
-
- .row.center
-   .col-sm-4
-     h3.head 最短で現金化可能な企業選定
-     =image_tag 'trouble2.webp', width: '95%', class: 'center'
-     br
-   .col-sm-4
-     h3.head 最安値の手数料を手軽に探せる
-     =image_tag 'trouble1.webp', width: '95%', class: 'center'
-     br
-   .col-sm-4
-     h3.head 現金化出来ない審査落ちを回避
-     =image_tag 'trouble3.webp', width: '95%', class: 'center'
-     br
+ p.center ファクタリング一括見積は『ファクタリンク』が運営する一括比較見積もりサービスです。いざファクタリングを行う際、1社のみに依頼すると、割高な手数料で契約することになってしまったり、審査落ちしてしまい、必要な期日に現金化出来ないと言う大きなリスクが発生します。一括見積サイトを利用することで、複数のファクタリング会社から見積もりを受けることが出来、現金化出来ないリスクの軽減と共に、買取手数料を最安値に抑えることが出来ます。
+ br/
+ br/
+ .center
+     =image_tag 'image002.webp', width: '80%', class: 'center'
 
 br
 br
@@ -105,14 +69,46 @@ br
 br
 br
 
+
+.row
+  .col-sm-12.push
+   span
+     | \ カンタン60秒入力! /
+   = link_to "#anchor" do
+     =image_tag 'click3.webp', width: '70%', class: 'center'
+  .center   
+    | ※個人の方は申し込みできません。
+
+
+br
+br
+
+
+.row#anchor
+   .col-sm-12.center
+     h2.surprise
+        | こんなお悩みありませんか？
+
+.top-wrapper
+ p.center ファクタリングは個人事業主・フリーランス・株式会社や有限会社と事業を行う幅広い事業者で利用することができるサービスです。特に以下のようなお悩みを持つ企業様にはおすすめとなります。
+ br/
+ br/
+ .center
+     =image_tag 'image003.webp', width: '80%', class: 'center'
+br
+br
+hr.line
+br
+br
+br
 .row
    .col-sm-12.center
      h2.push
       span
-       | ファクタリング選定に安心を！
+       | お任せください！企業様の
        br
        br
-       | 審査落ちを回避し安心資金調達
+       | 資金調達を最速でサポートします！
 br
 br
 hr.line
@@ -138,32 +134,77 @@ br
         | ファクタリングは借金？
 
 .top-wrapper
- p 『ファクタリング』を利用頂く際に安心できるのは、【借金ではない】こと。審査はあるものの、貸金業ではないので、負債の情報が信用情報に掲載されたり、法的な借金を背負うリスクが一切ありません。
+ p.center 『ファクタリング』を利用頂く際に安心できるのは、【借金ではない】こと。審査はあるものの、貸金業ではないので、負債の情報が信用情報に掲載されたり、法的な借金を背負うリスクが一切ありません。そのため融資のように数百万〜数千万の事業展開に利用するのと用途は異なり、あくまでキャッシュフローの改善のための資金調達として活用できます。
  br
 
  .row.center
    .col-sm-4
      h3.head 借金では無く売掛金の売却
      =image_tag 'image1.webp', width: '95%', class: 'center'
+     p.center 企業に保有する売掛金があればご利用いただけます。
      br
      p.text
    .col-sm-4
      h3.head 貸金と比較し簡単審査と証明のみ
      =image_tag 'image2.webp', width: '95%', class: 'center'
+     p.center 本人確認・売掛金・決算書等を提出することでファクタリングを行うことができます。
      br
      p.text
    .col-sm-4
      h3.head 信用情報にも傷がつかない
      =image_tag 'image3.webp', width: '95%', class: 'center'
+     p.center 金融情報にも一切傷をつけることなく取引いただけます。
      br
      p.text
 
+
+.row#anchor
+   .col-sm-12.center
+     h2.surprise
+        | ファクタリングの活用メリット
+.top-wrapper
+ p.center 
+ br
+
+ .row.center
+   .col-sm-4
+     h3.head 最短即日現金化
+     =image_tag 'trouble1.webp', width: '95%', class: 'center'
+     p.center 融資等の資金調達の場合、審査に1ヶ月〜2ヶ月ほど時間がかかるのに対して、ファクタリングなら最短即日で融資が受けられるため、スムーズな資金調達が可能となります。
+     br
+   .col-sm-4
+     h3.head 売掛金があれば利用出来る
+     =image_tag 'trouble2.webp', width: '95%', class: 'center'
+     p.center 請求は発生しているものの、未入金の売掛金があれば、法人様・個人事業主様ともにご利用いただくことができます。
+     br
+   .col-sm-4
+     h3.head 借金を背負わず資金調達
+     =image_tag 'trouble3.webp', width: '95%', class: 'center'
+     p.center ファクタリングはあくまで売掛金の買取という特性上、借金ではないので、金融情報に履歴が残らず安心です。
+     br
+ .row.center
+   .col-sm-4
+     h3.head リーズナブルな手数料
+     =image_tag 'trouble4.webp', width: '95%', class: 'center'
+     p.center どのような取引方法を選ぶかにもよりますが、手数料は低価格からご利用いただけます。
+     br
+   .col-sm-4
+     h3.head 無理なく相談しながら返済できる
+     =image_tag 'trouble5.webp', width: '95%', class: 'center'
+     p.center 返済についても契約前に相談しながら決定することができるので、安心して取引ができます。
+     br
+   .col-sm-4
+     h3.head 経済産業省も推奨
+     =image_tag 'trouble6.webp', width: '95%', class: 'center'
+     p.center ファクタリングは経済産業省でも推奨されている資金調達方法で今や一般的な調達方法として知られています。
+     br
 
 br
 hr.line
 br
 br
 br
+
 
 .row
   .col-sm-12.push
@@ -183,7 +224,7 @@ br
 .row
    .col-sm-12.center
      h2.surprise
-        | ファクタリング一括見積の費用
+        | 一括見積のご利用するメリット
 
 .top-wrapper
  br
@@ -191,15 +232,86 @@ br
    .col-sm-4
      h3.head 一括見積費用無料
      =image_tag 'image10.webp', width: '95%', class: 'center'
+     p.center 当社はファクタリング会社をご紹介するのみとなり、ユーザー様から費用をいただくことはありません。
      br
    .col-sm-4
-     h3.head 仲介手数料無料
+     h3.head 個人事業主・フリーランスもお任せ
      =image_tag 'image11.webp', width: '95%', class: 'center'
+     p.center 個人事業主やフリーランスがご利用頂けるファクタリング会社を厳選してご紹介可能です。
      br
    .col-sm-4
      h3.head 全国どこでもご利用可能
      =image_tag 'image12.webp', width: '95%', class: 'center'
+     p.center ファクタリング会社それぞれにある対応エリアも全て把握しているため、円滑にファクタリング会社のご紹介ができます。
      br
+ .row.center
+   .col-sm-4
+     h3.head 最安値手数料が見つかる
+     =image_tag 'image13.webp', width: '95%', class: 'center'
+     p.center 一括見積をご利用いただくことで、最安値のファクタリング会社を見つけることができます。
+     br
+   .col-sm-4
+     h3.head 少額からの利用も可能
+     =image_tag 'image14.webp', width: '95%', class: 'center'
+     p.center 各ファクタリング会社の情報を把握しているため、ご利用に沿ったご案内をいたします。
+     br
+   .col-sm-4
+     h3.head 怪しい会社は排除します！
+     =image_tag 'image15.webp', width: '95%', class: 'center'
+     p.center ファクタリンクは小規模会社が多く、高額手数料を請求する企業もありますが、全て排除します。
+     br
+
+.row
+   .col-sm-12.center
+     h2.surprise
+      | よくある質問
+br/
+.top-wrapper
+ p.center ここではファクタリング一括見積『ファクタリンク』におけるよくある質問を明記しております。
+ br
+  .cp_qa
+    .cp_actab.left
+      input#cp_tabfour031[type="checkbox" name="tabs"]
+      label[for="cp_tabfour031"]
+        | 請求書や売掛金がないと利用できないの？
+      .cp_actab-content
+        p
+          | おっしゃる通り、ファクタリングは売掛金で入金未回収を事前に買い取るサービスとなります。そのため売掛金が存在しないとご利用いただくことはできません。
+    .cp_actab.left
+      input#cp_tabfour032[type="checkbox" name="tabs"]
+      label[for="cp_tabfour032"]
+        | 2社間ファクタリングと3社間ファクタリングどっちの手数料が安い？
+      .cp_actab-content
+        p
+          | こちらは3社間ファクタリングの方が低価格の手数料でご利用いただけます。3社間の場合、取引先に請求を出来ることもあり、未回収リスクが格段に減るためです。
+    .cp_actab.left
+      input#cp_tabfour033[type="checkbox" name="tabs"]
+      label[for="cp_tabfour033"]
+        | 一括見積もりファクタリンクを利用した方が手数料が安くなるのは本当？
+      .cp_actab-content
+        p
+          | はい。実際ファクタリング会社は国の機関ではなく民間企業となります。そのため交渉で契約を行うため、1社のみの問い合わせでは実際に高額な手数料が発生することも多く報告されています。複数のファクタリング会社を利用することにより、条件比較や交渉により一番安い手数料でご利用頂くことができます。
+          
+
+br
+br
+hr.line
+br
+br
+br
+.row
+  .col-sm-12.push
+   span
+     | \ カンタン60秒入力! /
+   = link_to "/estimates/new" do
+     =image_tag 'click3.webp', width: '70%', class: 'center'
+  .center   
+    | ※個人の方は申し込みできません。
+
+
+br
+br
+
 
 br
 .row
@@ -218,13 +330,13 @@ ul.flow.center
           | STEP.01
         | カンタン60秒見積もり入力
       dd.center
-        | まずは一括見積でご希望内容や情報をカンタン入力！
+        | まずはファクタリング一括見積『ファクタリンク』でご希望内容や情報をカンタン入力！
   li
     dl
       dt
         span.icon
           | STEP.02
-        | 確認連絡
+        | ファクタリング会社より連絡対応
       dd.center
         | 各社より申込内容確認と各社基準に基づく必要資料の提示依頼があります。
         br
