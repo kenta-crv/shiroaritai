@@ -214,7 +214,193 @@
     }
    }
 
+.index-wrapper{
+  margin-top:-30px;
+  .all-width {
+    margin-right:40px;
+  }
+  .each-width {
+    padding-left:20px;
+    width:"80%";
+  }
+  .description{
+    margin-top:-5px;
+    margin-left:5px;
+    @media screen and ( max-width:479px ){font-size:1.2rem;}
+  }
+}
 
+
+/*posts show*/
+#review-detail{
+  margin:-10px 20px;
+   .headline-first {
+       color:black;
+       font-weight:bold;
+       font-size:3.5rem;
+       margin-bottom:30px;
+       @media screen and ( max-width:479px ){font-size:2.0rem;}
+      }
+   .headline-first:first-letter {
+       color:var(--main-color);
+       font-size:4.0rem;
+       @media screen and (max-width:479px ){fint-size:1.8rem;}
+       }
+   .contents {
+    text-align:center;
+    font-size:26px;
+    font-weight:bold;
+    margin-top:20px;
+   }
+
+   h2 {
+       color:black;
+       font-weight:bold;
+       font-size:3.0rem;
+       margin-top:50px;
+       @media screen and ( max-width:479px ){font-size:2.0rem;}
+      }
+   h2.before {
+       color:var(--main-color);
+       font-size:3.5rem;
+       @media screen and (max-width:479px ){fint-size:1.8rem;}
+       }
+
+    h3 {
+        position: relative;
+        display: inline-block;
+        padding: 0 55px;
+        font-size:2.5rem;
+        font-weight:bold;
+        text-align:left;
+        padding-left:70px;
+        margin-top:50px;
+       }
+    h3:before, h4:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 45px;
+        height: 2px;
+        border-top: solid 2px var(--main-color);
+        border-bottom: solid 2px var(--main-color);
+        }
+    h3:before {
+       left:0;
+        }
+    h3:after {
+        right: 0;
+        }
+
+    h4 {
+        position: relative;
+        display: inline-block;
+        padding: 0 55px;
+        font-size:2.0rem;
+        font-weight:bold;
+        text-align:left;
+        padding-left:70px;
+        margin-top:50px;
+       }
+    h4:before, h4:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 45px;
+        height: 2px;
+        border-top: solid 2px var(--main-color);
+        border-bottom: solid 2px var(--main-color);
+        }
+    h4:before {
+       left:0;
+        }
+    h4:after {
+        right: 0;
+        }
+    
+    h5 {
+       color: var(--main-color);
+       margin-left:60px;
+       border: dotted var(--main-color) 2px;/*ドット 色 太さ*/
+       padding: 0.5em 0.5em 0.5em 2em;
+       line-height: 1.5;
+       width:60%;
+       text-align:left;
+         }
+    .body-base {
+      padding:0px 30px;
+      line-height:2.5;
+      text-align:left;
+      font-size:16px;
+    }
+    .column-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .column-image img {
+      width: 500px;
+      height: auto;
+      object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+      .column-image img {
+          width: 250px;
+      }
+  }
+
+
+ }
+
+ .put {/*親div*/
+  position: relative;/*相対配置*/
+  }
+
+.put p.prefecture {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  background-color:var(--main-color);
+  padding:2px 10px;
+  @media screen and ( max-width:479px ){
+        margin-top: 15px;
+        margin-left: 44px;}
+  }
+
+
+  .main-left {
+    margin-left: 30px;
+  }
+  ul {
+    width:90%;
+    color: #668ad8;/*文字色*/
+    background: #f1f8ff; /*背景色*/
+    paddin: 0.5em 0.5em 0.5em 2em;
+    margin-left:40px;
+    @media screen and (max-width: 480px) {
+      margin-left:0px;
+    }
+    ul li {
+      width:90%;
+      line-height: 2.5;
+      padding: 0.5em 0;
+    }
+  
+    li {
+      list-style:none;
+      padding-left: 2.0em;
+      h2 {font-size:16px; padding-left:10px;}
+      h3 {font-size:15px; padding-left:10px;}
+      h4 {font-size:14px; padding-left:20px;}
+    }
+  }
 
  .information {
    margin-top:45px;
@@ -1520,3 +1706,32 @@ table.company {
         margin-top: 15px;
         margin-left: 44px;}
   }
+
+
+  footer {
+    width:100%;
+    height:auto;
+    background-color:#E3E5E8;
+    padding:30px;
+    margin:0 auto;
+
+   .left {
+     text-align:left;
+   }
+
+
+   .height {
+     margin-top:10px;
+   }
+     .maker {
+    font-size:21px;
+    color:var(--main-color);
+    font-weight:bold;
+  }
+  .link {
+    font-size:18px;
+    color:var(--main-color);
+  }
+}
+
+

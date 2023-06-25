@@ -1,5 +1,6 @@
 class TopController < ApplicationController
   def index
+    @columns = Column.all
   end
 
   def faq
