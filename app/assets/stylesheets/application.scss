@@ -1735,3 +1735,33 @@ table.company {
 }
 
 
+/*テーブル共通*/
+table.review {
+  border: 1px solid #aaa;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  .font-middle{font-size:1.7rem;}
+  .red{color:red;}
+
+  th, td {
+    background: #f4f4f4;
+    padding: 10px;
+    line-height:3rem; }
+  .title{
+    background-color:$main_color;
+    font-size: 1.5vw;
+    color:white;}
+  
+  td {
+     vertical-align: middle;
+     text-align: left;
+     overflow: visible;
+     position: relative;
+     color: #333;
+     font-size: 1.3vw;
+     }
+}
+table.left {margin:5px 0px 5px 50px;}
+table.right {margin:5px 50px 5px 0px;}
