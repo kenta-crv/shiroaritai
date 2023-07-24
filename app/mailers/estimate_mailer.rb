@@ -1,9 +1,9 @@
 class EstimateMailer < ActionMailer::Base
-  default from: "factoring@factoru.jp"
+  default from: "movies@ri-plus.jp"
   def received_email(estimate)
     @estimate = estimate
-    mail to: "info@factolink.jp"
-    mail(subject: 'ファクタリング一括見積にお問い合わせ頂きありがとうございます。') do |format|
+    mail to: "movies@ri-plus.jp"
+    mail(subject: 'ムービーズにお問い合わせ頂きありがとうございます。') do |format|
       format.text
     end
   end
@@ -11,7 +11,7 @@ class EstimateMailer < ActionMailer::Base
   def send_email(estimate)
     @estimate = estimate
     mail to: estimate.email
-    mail(subject: 'ファクタリング一括見積にお問い合わせ頂きありがとうございます。') do |format|
+    mail(subject: 'ムービーズにお問い合わせ頂きありがとうございます。') do |format|
       format.text
     end
   end

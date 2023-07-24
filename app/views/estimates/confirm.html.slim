@@ -25,29 +25,11 @@
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 種別
-        td.responsive-cell
-         .input-container
-          = f.hidden_field :select
-          = @estimate.select
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
           | 担当者名
         td.responsive-cell
          .input-container
          = f.hidden_field :name
          = @estimate.name
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
-          | フリガナ
-        td.responsive-cell
-         .input-container
-         = f.hidden_field :name_kana
-         = @estimate.name_kana
       tr
         td.label-cell
           strong.label 必須
@@ -84,40 +66,32 @@
          .input-container
           = f.hidden_field :url
           = @estimate.url
-      tr
-        td.label-cell
-          strong.label.label-blue 任意
-        td.arrow-box-cell
-          | URL
-        td.responsive-cell
-         .input-container
-          = f.hidden_field :settlement
-          = @estimate.settlement
+
       tr
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 買取希望額
+          | 業種
           br
           |
         td.responsive-cell
          .input-container
-         = f.hidden_field :price
-         = @estimate.price
+         = f.hidden_field :business
+         = @estimate.business
       tr
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 使用用途
+          | 希望納期
         td.responsive-cell
          .input-container
-          = f.hidden_field :use
-          = @estimate.use
+          = f.hidden_field :period
+          = @estimate.period
       tr
         td.label-cell
-          strong.label.label-blue 任意
+          strong.label 必須
         td.arrow-box-cell
-          | 備考
+          | 制作したい動画内容・要望
         td.responsive-cell
          .input-container
           = f.hidden_field :remarks

@@ -186,7 +186,7 @@
   .back-image-index {
     text-align:center;
     .index-3 {
-        font-size:3.6vw;
+        font-size:3.4vw;
         font-weight:bold;
         line-height:7vw;
         color:$asort_color;
@@ -197,6 +197,18 @@
           line-height:12vw;
         }
         
+    }
+    .red-title {
+        font-size:4.0vw;
+        font-weight:bold;
+        line-height:7vw;
+        color:red;
+        text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
+      @media(max-width: 748px) {
+          text-align:center;
+          font-size:8.0vw;
+          line-height:12vw;
+        }
     }
     /*イエローライン*/
     .push {
@@ -1765,3 +1777,73 @@ table.review {
 }
 table.left {margin:5px 0px 5px 50px;}
 table.right {margin:5px 50px 5px 0px;}
+
+
+.block-image {
+  width: 80%; // 通常の場合は65%
+}
+@media only screen and (max-width: 599px) { 
+  .block-image {
+      width: 100%; // スマホの場合（575px以下）は90%
+  }
+}
+
+
+/*テーブル共通*/
+table.free {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+  font-size: 1.3vw;
+  th, td { padding: 10px; }
+  th {
+     background: $main_color;
+     vertical-align: middle;
+     text-align: left;
+     overflow: visible;
+     position: relative;
+     color: #fff;
+     size:24px;
+     font-weight: bold;
+     :after {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: $main_color;
+        border-width: 10px;
+        margin-top: -10px;
+        }
+     }
+
+  td {
+     background: #f4f4f4;
+     color:red;
+     font-weight: bold;
+     font-size:30px;
+     }
+     
+}
+
+
+.box13 {
+    padding: 0em 1em;
+    font-size:24px;
+    font-weight:bold;
+    line-height:5vw;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.box13 p {
+    margin: 0; 
+    padding: 0;
+}
