@@ -1,5 +1,5 @@
 class MessageMailer < ActionMailer::Base
-  default from: "info@factolink.jp"
+  default from: "movies@ri-plus.jp"
   def received_email(message)
     @message = message
     @room = message.room
@@ -10,7 +10,7 @@ class MessageMailer < ActionMailer::Base
       @send_user_name = @room.member.company
       @received_user_name = @room.user_name
     end
-    mail to: "info@factolink.jp"
+    mail to: "movies@ri-plus.jp"
     mail(subject: 'メッセージが送信されました') do |format|
       format.text
     end

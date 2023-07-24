@@ -10,16 +10,6 @@ Rails.application.routes.draw do
 
   root to: 'top#index' #トップページ
   #特集
-  get 'faq' => 'top#faq'
-  get 'co' => 'top#co'
-  get 'question' => 'top#question'
-
-  get 'cocacola' => 'top#cocacola'
-  get 'asahi' => 'top#asahi'
-  get 'otsuka' => 'top#otsuka'
-  get 'itoen' => 'top#itoen'
-  get 'dydo' => 'top#dydo'
-  get 'kirin' => 'top#kirin'
 
   resources :columns
 

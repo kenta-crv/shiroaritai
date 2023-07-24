@@ -90,7 +90,6 @@ class EstimatesController < ApplicationController
       :co, #会社名
       :select,
       :name,  #名前
-      :name_kana,  #フリガナ
       :tel, #電話番号
       :email, #メールアドレス
       :url, #会社HP
