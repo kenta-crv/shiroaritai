@@ -93,10 +93,8 @@ class EstimatesController < ApplicationController
       :tel, #電話番号
       :email, #メールアドレス
       :url, #会社HP
-      :address, #住所
-      :settlement, #決算期
-      :price, #買取金額
-      :use, #使用用途
+      :business,
+      :period,
       :remarks #要望
     )
   end
