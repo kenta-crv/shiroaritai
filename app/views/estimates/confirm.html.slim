@@ -72,14 +72,14 @@
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 制作したい動画内容・要望
+          | 備考・要望
         td.responsive-cell
          .input-container
           = f.hidden_field :remarks
           = @estimate.remarks
       tr
        td colspan="3"
-        = f.submit "送信", class:"btn btn-primary", data: {behavior: "fb-track"}
+        = f.submit "送信", class:"btn btn-success", data: {behavior: "fb-track"}
       javascript:
        document.addEventListener('DOMContentLoaded', function(){
         var button = document.querySelector("[data-behavior='fb-track']");
