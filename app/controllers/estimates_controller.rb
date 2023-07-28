@@ -87,13 +87,10 @@ class EstimatesController < ApplicationController
   private
   def estimate_params
     params.require(:estimate).permit(
-      :co, #会社名
-      :select,
       :name,  #名前
       :tel, #電話番号
       :email, #メールアドレス
-      :url, #会社HP
-      :business,
+      :wide, #会社HP
       :period,
       :remarks #要望
     )

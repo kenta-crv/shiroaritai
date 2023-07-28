@@ -16,16 +16,7 @@
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 会社名
-        td.responsive-cell
-         .input-container
-          = f.hidden_field :co
-          = @estimate.co
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
-          | 担当者名
+          | お名前
         td.responsive-cell
          .input-container
          = f.hidden_field :name
@@ -61,23 +52,13 @@
         td.label-cell
           strong.label.label-blue 任意
         td.arrow-box-cell
-          | URL
-        td.responsive-cell
-         .input-container
-          = f.hidden_field :url
-          = @estimate.url
-
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
-          | 業種
+          | 平米数
           br
           |
         td.responsive-cell
          .input-container
-         = f.hidden_field :business
-         = @estimate.business
+         = f.hidden_field :wide
+         = @estimate.wide
       tr
         td.label-cell
           strong.label 必須

@@ -13,15 +13,7 @@ table.company.responsive-table
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 会社名
-        td.responsive-cell
-         .input-container
-          = f.text_field :co
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
-          | 担当者名
+          | お名前
         td.responsive-cell
          .input-container
           = f.text_field :name
@@ -53,18 +45,10 @@ table.company.responsive-table
         td.label-cell
           strong.label.label-blue 任意
         td.arrow-box-cell
-          | URL
+          | 平米数
         td.responsive-cell
          .input-container
-          = f.text_field :url
-      tr
-        td.label-cell
-          strong.label 必須
-        td.arrow-box-cell
-          | 業種
-        td.responsive-cell
-         .input-container
-          = f.text_field :business
+          = f.text_field :wide
       tr
         td.label-cell
           strong.label 必須
@@ -73,7 +57,7 @@ table.company.responsive-table
         td.responsive-cell
          .input-container
           = f.select(:period,[\
-            ["なるべく早く","なるべく早く"],\
+            ["緊急で依頼したい","緊急で依頼したい"],\
             ["急ぎではない","急ぎではない"],\
             ["決まっていない","決まっていない"],\
            ],include_blank: "選択してください")
@@ -81,10 +65,10 @@ table.company.responsive-table
         td.label-cell
           strong.label 必須
         td.arrow-box-cell
-          | 制作したい動画内容・要望
+          | 備考・要望
         td.responsive-cell
          .input-container
           = f.text_area :remarks
       tr
         td colspan="3"
-          = f.submit "確認画面", class:"btn btn-primary"
+          = f.submit "確認画面", class:"btn btn-success"

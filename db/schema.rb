@@ -117,13 +117,11 @@ ActiveRecord::Schema.define(version: 2022_02_10_055408) do
   end
 
   create_table "estimates", force: :cascade do |t|
-    t.string "co"
     t.string "name"
     t.string "tel"
     t.string "email"
     t.string "address"
-    t.string "url"
-    t.string "business"
+    t.string "wide"
     t.string "period"
     t.string "remarks"
     t.datetime "created_at", null: false
