@@ -89,6 +89,7 @@ class EstimatesController < ApplicationController
     params.require(:estimate).permit(
       :name,  #名前
       :tel, #電話番号
+      :address,
       :email, #メールアドレス
       :wide, #会社HP
       :period,
